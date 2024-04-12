@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import TopSearch from './TopSearch';
 import Image from 'next/image';
 import ArrowImage from './../../../public/images/rightArrow.png';
 import codeIcon from './../../../public/images/code.png';
-
 
 const searchBoxContainer = {
     width: "60%",
@@ -44,26 +42,17 @@ const searchStyle = {
     borderRadius: "15px"
 }
 
-// const data = '</>';
-
 const SearchBox = () => {
     const [query, setQuery] = useState('');
-    const [searchResults, setSearchResults] = useState('');
 
     const handleInputChange = (event: any) => {
         setQuery(event.target.value);
-    };
-
-    const handleSearch = () => {
-        // Call the onSearch callback with the search query
-        setSearchResults(query);
     };
 
     return (
         <div style={searchWrapper}>
             <div style={searchBoxContainer}>
                 <div style={searchBoxStyle}>
-
                     <div style={searchStyle}>
                         <input
                             type="text"
@@ -72,15 +61,10 @@ const SearchBox = () => {
                             value={query}
                             onChange={handleInputChange}
                         />
-                        {/* <div> {data} </div> */}
-                        <Image src={codeIcon} alt="codeIcon" width={20} height={20}/>
-                        <Image src={ArrowImage} alt="arrow" width={15} height={15}/>
-                        
+                        <Image src={codeIcon} alt="codeIcon" width={20} height={20} />
+                        <Image src={ArrowImage} alt="arrow" width={15} height={15} />
                     </div>
-
-
                 </div>
-
             </div>
         </div>
     );

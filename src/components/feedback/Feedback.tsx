@@ -36,7 +36,7 @@ const Feedback = () => {
   return (
     <div style={Container}>
       {feedback ? (
-        <div> {feedback === 'yes' ? 'Thank you for your feedback!' : 'Get back'}   </div>
+        <div> {feedback === 'yes' ? 'Thank you for your feedback!' : 'Thank you for your feedback! Will Improve based on interest!'}   </div>
       ) : (
         <>
           <p style={Question}>Is this conversation helpful so far?</p>

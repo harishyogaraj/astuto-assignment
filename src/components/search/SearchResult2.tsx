@@ -1,7 +1,6 @@
 import Link from "next/link";
 import TextMessage from "../commonComponents/TextMessage";
 
-
 const linkStyle = {
     color: "green"
 };
@@ -38,7 +37,7 @@ const searchResultContainer = {
     background: 'white',
     padding: "20px",
     borderRadius: "15px",
-    margin: "20px 0"
+    margin: "20px 20"
 }
 
 const SearchResult = () => {
